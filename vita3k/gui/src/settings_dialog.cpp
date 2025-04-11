@@ -376,7 +376,7 @@ static void save_config(GuiState &gui, EmuEnvState &emuenv) {
         emuenv.cfg.psn_signed_in = config.psn_signed_in;
     }
 
-    bool update_viewport_en = 0;
+    bool update_viewport_en = false;
 
     if (emuenv.cfg.fullscreen_hd_res_pixel_perfect != config.fullscreen_hd_res_pixel_perfect) {
         emuenv.cfg.fullscreen_hd_res_pixel_perfect = config.fullscreen_hd_res_pixel_perfect;
