@@ -360,8 +360,7 @@ if(NOT CURL_FOUND)
 	option(CURL_CA_FALLBACK "Set ON to use built-in CA store of TLS backend. Defaults to OFF" ON)
 	set(CURL_DISABLE_TESTS ON)
 	FetchContent_Declare(curl
-		GIT_REPOSITORY https://github.com/curl/curl.git
-		GIT_TAG        fd567d4f06857f4fc8e2f64ea727b1318f76ad33 # release 8.8.0
+		URL      https://codeload.github.com/curl/curl/tar.gz/refs/tags/curl-8_8_0
 	)
 	FetchContent_MakeAvailable(curl)
 else()
